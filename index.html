@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,regular,600,700&subset=cyrillic-ext&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Staatliches:regular&subset=cyrillic-ext&display=swap" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__top top-header">
+              <nav class="top-header__menu">
+                <ul class="top-header__menu-list">
+                  <li class="top-header__menu-item">
+                    <a class="top-header__menu-link" href="#">Магазины</a>
+                  </li>
+                  <li class="top-header__menu-item">
+                    <a class="top-header__menu-link" href="#">Акции</a>
+                  </li>
+                  <li class="top-header__menu-item">
+                    <a class="top-header__menu-link" href="#">Доставка и оплата</a>
+                  </li>
+                </ul>
+              </nav>
+              <a class="logo" href="#">
+                <img class="logo__img" src="images/logo.svg" alt="Drive Moto logo" aria-label="Drive Moto logo">
+              </a>
+              <div class="location">
+                <img src="images/location.svg" alt="location icon">
+                Москва,  ул. Науки  25
+              </div>
+              <div class="actions">
+                <a class="actions__item" href="#" aria-label="wishlist icon">
+                  <img src="images/wishlist.svg" alt="heart icon">
+                </a>
+                <a class="actions__item" href="#" aria-label="account icon">
+                  <img src="images/account.svg" alt="person icon">
+                </a>
+                <a class="actions__item actions__item--cart" href="#" aria-label="cart icon">
+                  <img src="images/cart.svg" alt="cart icon">
+                  <span class="counter">1</span>
+                </a>
+              </div>
+            </div>
+            <div class="header__bottom bottom-header">
+              <nav class="bottom-header__menu">
+                <ul class="bottom-header-list">
+                  <li class="bottom-header-item">
+                    <a class="bottom-header-link" href="#"> Квадроциклы</a>
+                  </li>
+                  <li class="bottom-header-item">
+                    <a class="bottom-header-link" href="#">Катера</a>
+                  </li>
+                  <li class="bottom-header-item">
+                    <a class="bottom-header-link active" href="#">Гидроциклы</a>
+                  </li>
+                  <li class="bottom-header-item">
+                    <a class="bottom-header-link" href="#">Лодки</a>
+                  </li>
+                  <li class="bottom-header-item">
+                    <a class="bottom-header-link" href="#">Вездеходы</a>
+                  </li>
+                  <li class="bottom-header-item">
+                    <a class="bottom-header-link" href="#">Снегоходы</a>
+                  </li>
+                  <li class="bottom-header-item">
+                    <a class="bottom-header-link" href="#">Двигатели</a>
+                  </li>
+                  <li class="bottom-header-item">
+                    <a class="bottom-header-link" href="#">Запчасти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="banner-descr">
+          <div class="container">
+            <div class="banner-descr__inner">
+              <div class="banner-descr__slider">
+                <div class="banner-descr__slide">
+                  <img class="banner-descr__img" src="images/slide.jpg" alt="jet ski">
+                </div>
+                <div class="banner-descr__slide">
+                  <img class="banner-descr__img" src="images/slide.jpg" alt="jet ski">
+                </div>
+                <div class="banner-descr__slide">
+                  <img class="banner-descr__img" src="images/slide.jpg" alt="jet ski">
+                </div>
+                <div class="banner-descr__slide">
+                  <img class="banner-descr__img" src="images/slide.jpg" alt="jet ski">
+                </div>
+                <div class="banner-descr__slide">
+                  <img class="banner-descr__img" src="images/slide.jpg" alt="jet ski">
+                </div>
+                <div class="banner-descr__slide">
+                  <img class="banner-descr__img" src="images/slide.jpg" alt="jet ski">
+                </div>
+  
+              </div>
+              <div class="banner-descr__card">
+                <div class="banner-descr__top">
+                  <div class="banner-descr__tag">акция</div>
+                  <div class="banner-descr__price">
+                    <div class="banner-descr__price--new">
+                      <span>190 000</span> 
+                      <img src="images/ruble.svg" alt="ruble">
+                    </div>
+                    <div class="banner-descr__price--old">
+                      <span>225 000</span>
+                      <img src="images/ruble-light.svg" alt="ruble">
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="banner-descr__middle">
+                  <img class="banner-descr__img-card" src="images/motor.png" alt="boat motor">
+                  <h2 class="banner-descr__img-title">
+                    Лодочный мотор 
+                    Suzuki DF9.9BRS
+                  </h2>
+                </div>
+                <div class="banner-descr__bottom">
+                  <p class="banner-descr__text">Акция действует до <span>31.08.2020</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="searching">
+          <div class="container">
+            <form class="searching__form">
+              <input class="searching__radio" data-hint="Поиск по  номеру" type="radio" id="tab1" name="tab" value="Введите номер">
+              <label class="searching__label" for="tab1">Поиск по  номеру</label>
+
+              <input class="searching__radio" type="radio" id="tab2" name="tab"  value="Введите марку" checked="checked">
+              <label class="searching__label" for="tab2">Поиск по марке</label>
+              
+              <input class="searching__radio" type="radio" id="tab3" name="tab"  value="Введите название товара">
+              <label class="searching__label" for="tab3">Поиск по названию товара</label>
+              <!-- <input class="searching__radio" type="radio" id="tab1" name="tab"  value="Поиск по  номеру">
+              <label class="searching__label" for="tab1">Поиск по  номеру</label>
+
+              <input class="searching__radio" type="radio" id="tab2" name="tab"  value="Поиск по марке" checked="checked">
+              <label class="searching__label" for="tab2">Поиск по марке</label>
+
+              <input class="searching__radio" type="radio" id="tab3" name="tab"  value="Поиск по названию товара">
+              <label class="searching__label" for="tab3">Поиск по названию товара</label> -->
+              
+              
+              <input class="searching__input" type="text" id="search-field" placeholder=""></input>
+              <button class="searching__btn btn-reset" type="submit">искать</button>
+            </form>
+          </div>
+        </div>
+        <div class="category">
+          <div class="container">
+            <div class="category__inner">
+
+              <div class="category__card">
+                <a class="category__link" href="#"></a>
+               <div class="category__text">
+                  <h3 class="category__name">Квадроциклы</h3>
+                  <a class="category__detail-link" href="#">Подробнее</a>
+               </div>
+                <img class="category__img" src="images/quad-bikes.png" alt="Квадроциклы">
+              </div>
+              <div class="category__card">
+                <a class="category__link" href="#"></a>
+               <div class="category__text">
+                <h3 class="category__name">Гидроциклы</h3>
+                <a class="category__detail-link" href="#">Подробнее</a>
+                </div>
+                <img class="category__img" src="images/hydrocycles.png" alt="Гидроциклы">
+              </div>
+              <div class="category__card">
+                <a class="category__link" href="#"></a>
+                <div class="category__text">
+                  <h3 class="category__name">Катера</h3>
+                  <a class="category__detail-link" href="#">Подробнее</a>
+                </div>
+                <img class="category__img" src="images/boat.png" alt="Катера">
+              </div>
+              <div class="category__card">
+                <a class="category__link" href="#"></a>
+               <div class="category__text">
+                  <h3 class="category__name">Снегоходы</h3>
+                  <a class="category__detail-link" href="#">Подробнее</a>
+               </div>
+                <img class="category__img" src="images/snowmobiles.png" alt="Снегоходы">
+              </div>
+              <div class="category__card">
+                <a class="category__link" href="#"></a>
+                <div class="category__text">
+                  <h3 class="category__name">Вездеходы</h3>
+                  <a class="category__detail-link" href="#">Подробнее</a>
+                </div>
+                <img class="category__img" src="images/all-terrain-vehicles.png" alt="Вездеходы">
+              </div>
+              <div class="category__card">
+                <a class="category__link" href="#"></a>
+                <div class="category__text">
+                  <h3 class="category__name">Двигатели</h3>
+                  <a class="category__detail-link" href="#">Подробнее</a>
+                </div>
+                <img class="category__img engines-img" src="images/engines.png" alt="Двигатели">
+              </div>
+          
+            </div>
+          </div>
+        </div>
+        <section class="popular-products">
+          <div class="container">
+            <h2 class="popular-products__title">Популярные товары</h2>
+            <div class="popular-products__inner">
+              <div class="popular-products__tabs popular-tabs">
+                  <div class="popular-tabs__header">
+                     <div class="popular-tabs__header-item popular-tabs__header-item--active" data-tab="#tab_1">запчасти</div>
+                     <div class="popular-tabs__header-item" data-tab="#tab_2">моторы</div>
+                     <div class="popular-tabs__header-item" data-tab="#tab_3">шины</div>
+                     <div class="popular-tabs__header-item" data-tab="#tab_4">электроника</div>
+                     <div class="popular-tabs__header-item" data-tab="#tab_5">инструменты</div>
+                     <div class="popular-tabs__header-item" data-tab="#tab_6">аксессуары </div>
+                  </div>
+
+                  <div class="popular-tabs__content">
+
+                    <div class="popular-tab__content-item popular-tab__content-item--active" id="tab_1">
+
+                      <div class="popular-tab__slider-popular">
+                        <div class="popular-tab__slider-slide">
+                          <!-- card 1 -->
+                          <div class="popular-tab__slider-card product-card">
+                            <div class="product-card__top">
+                              <div class="product-card__wishlist">
+                                <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                              </div>
+                            </div>
+                            <div class="product-card__content">
+                              <div class="product-card__product product-1">
+                                <img class="product-card__product-img card-1" src="images/backpack.png" alt="Рюкзак" aria-label="Водонепроницаемый Рюкзак">
+                                <p class="product-card__product-name">
+                                  Водонепроницаемый Рюкзак
+                                </p>
+                              </div>
+                              <div class="product-card__price">
+                                9 800 ₽
+                              </div>
+                            </div>
+                            <div class="product-card__bottom">
+                              <div class="product-card__cart">
+                                <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                              </div>
+                            </div>
+                            <div class="product-card__hover">
+                              <span class="product-card__hover-span">
+                                посмотреть товар
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end card 1 -->
+  
+                          <!-- card 2 -->
+                          <div class="popular-tab__slider-card product-card">
+                            <div class="product-card__top">
+                              <div class="product-card__badge">
+                                SALE
+                              </div>
+                              <div class="product-card__wishlist">
+                                <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                              </div>
+                            </div>
+                            <div class="product-card__content content-2">
+                              <div class="product-card__product product-2">
+                                <img class="product-card__product-img" src="images/life-jacket.png" alt="Спасательный жилет" aria-label="Спасательный жилет">
+                                <p class="product-card__product-name">
+                                  Спасательный жилет BRP Men's Airflow PFD
+                                </p>
+                              </div>
+                              <div class="product-card__price">
+                                6 900 ₽
+                              </div>
+                            </div>
+                            <div class="product-card__bottom">
+                              <div class="product-card__cart">
+                                <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                              </div>
+                            </div>
+                            <div class="product-card__hover">
+                              <span class="product-card__hover-span">
+                                посмотреть товар
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end card 2 -->
+  
+                          <!-- card 3 -->
+                          <div class="popular-tab__slider-card product-card">
+                            <div class="product-card__top">
+                              <div class="product-card__wishlist">
+                                <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                              </div>
+                            </div>
+                            <div class="product-card__content">
+                              <div class="product-card__product product-3">
+                                <img class="product-card__product-img card-3" src="images/aps.png" alt="Система Audio-Premium" aria-label="Система Audio-Premium">
+                                <p class="product-card__product-name">           
+                                  BRP Audio-Premium System
+                                </p>
+                              </div>
+                              <div class="product-card__price">
+                                68 000 ₽
+                              </div>
+                            </div>
+                            <div class="product-card__bottom">
+                              <div class="product-card__cart">
+                                <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                              </div>
+                            </div>
+                            <div class="product-card__hover">
+                              <span class="product-card__hover-span">
+                                посмотреть товар
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end card 3 -->
+               
+                          <!-- card 4 -->
+                          <div class="popular-tab__slider-card product-card product-card--available">
+                            <div class="product-card__top">
+                              <div class="product-card__badge">
+                                SALE
+                              </div>
+                              <div class="product-card__wishlist">
+                                <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                              </div>
+                            </div>
+                            <div class="product-card__content">
+                              <div class="product-card__product">
+                                <img class="product-card__product-img" src="images/salvation--equipment.png" alt="Спасательное снаряжение" aria-label="Спасательное снаряжение">
+                                <p class="product-card__product-name">
+                                  Спасательноe снаряжение
+                                </p>
+                              </div>
+                            </div>
+                            <div class="product-card__status-info">
+                              <span class="product-card__availablity">
+                                нет в наличии
+                              </span>
+                              <a class="product-card__notification-of-availability" href="#">
+                                Сообщить о поступлении</a>
+                            </div>
+                      
+                            <div class="product-card__hover">
+                              <span class="product-card__hover-span">
+                                посмотреть товар
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end card 4 -->
+                         
+                        </div>
+                        
+                        <div class="popular-tab__slider-slide">
+                          <!-- card 1 -->
+                          <div class="popular-tab__slider-card product-card">
+                            <div class="product-card__top">
+                              <div class="product-card__wishlist">
+                                <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                              </div>
+                            </div>
+                            <div class="product-card__content">
+                              <div class="product-card__product product-1">
+                                <img class="product-card__product-img card-1" src="images/backpack.png" alt="Рюкзак" aria-label="Водонепроницаемый Рюкзак">
+                                <p class="product-card__product-name">
+                                  Водонепроницаемый Рюкзак
+                                </p>
+                              </div>
+                              <div class="product-card__price">
+                                9 800 ₽
+                              </div>
+                            </div>
+                            <div class="product-card__bottom">
+                              <div class="product-card__cart">
+                                <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                              </div>
+                            </div>
+                            <div class="product-card__hover">
+                              <span class="product-card__hover-span">
+                                посмотреть товар
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end card 1 -->
+  
+                          <!-- card 2 -->
+                          <div class="popular-tab__slider-card product-card">
+                            <div class="product-card__top">
+                              <div class="product-card__badge">
+                                SALE
+                              </div>
+                              <div class="product-card__wishlist">
+                                <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                              </div>
+                            </div>
+                            <div class="product-card__content content-2">
+                              <div class="product-card__product product-2">
+                                <img class="product-card__product-img" src="images/life-jacket.png" alt="Спасательный жилет" aria-label="Спасательный жилет">
+                                <p class="product-card__product-name">
+                                  Спасательный жилет BRP Men's Airflow PFD
+                                </p>
+                              </div>
+                              <div class="product-card__price">
+                                6 900 ₽
+                              </div>
+                            </div>
+                            <div class="product-card__bottom">
+                              <div class="product-card__cart">
+                                <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                              </div>
+                            </div>
+                            <div class="product-card__hover">
+                              <span class="product-card__hover-span">
+                                посмотреть товар
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end card 2 -->
+  
+                          <!-- card 3 -->
+                          <div class="popular-tab__slider-card product-card">
+                            <div class="product-card__top">
+                              <div class="product-card__wishlist">
+                                <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                              </div>
+                            </div>
+                            <div class="product-card__content">
+                              <div class="product-card__product product-3">
+                                <img class="product-card__product-img card-3" src="images/aps.png" alt="Система Audio-Premium" aria-label="Система Audio-Premium">
+                                <p class="product-card__product-name">           
+                                  BRP Audio-Premium System
+                                </p>
+                              </div>
+                              <div class="product-card__price">
+                                68 000 ₽
+                              </div>
+                            </div>
+                            <div class="product-card__bottom">
+                              <div class="product-card__cart">
+                                <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                              </div>
+                            </div>
+                            <div class="product-card__hover">
+                              <span class="product-card__hover-span">
+                                посмотреть товар
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end card 3 -->
+               
+                          <!-- card 4 -->
+                          <div class="popular-tab__slider-card product-card product-card--available">
+                            <div class="product-card__top">
+                              <div class="product-card__badge">
+                                SALE
+                              </div>
+                              <div class="product-card__wishlist">
+                                <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                              </div>
+                            </div>
+                            <div class="product-card__content">
+                              <div class="product-card__product">
+                                <img class="product-card__product-img" src="images/salvation--equipment.png" alt="Спасательное снаряжение" aria-label="Спасательное снаряжение">
+                                <p class="product-card__product-name">
+                                  Спасательноe снаряжение
+                                </p>
+                              </div>
+                            </div>
+                            <div class="product-card__status-info">
+                              <span class="product-card__availablity">
+                                нет в наличии
+                              </span>
+                              <a class="product-card__notification-of-availability" href="#">
+                                Сообщить о поступлении</a>
+                            </div>
+                      
+                            <div class="product-card__hover">
+                              <span class="product-card__hover-span">
+                                посмотреть товар
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end card 4 -->
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="popular-tab__content-item" id="tab_2">
+                      Конетнт 2
+                    </div>
+                     <div class="popular-tab__content-item" id="tab_3">
+                      Конетнт 3
+                     </div>
+                     <div class="popular-tab__content-item" id="tab_4">
+                      Конетнт 4
+                     </div>
+                     <div class="popular-tab__content-item" id="tab_5">
+                      Конетнт 5
+                     </div>
+                     <div class="popular-tab__content-item" id="tab_6">
+                      Конетнт 6
+                     </div>
+                  </div>
+              </div>
+              <div class="popular-products__btn-show-more">
+                <a class="popular-products__btn-more" href="#">
+                  Показать еще
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="discounts">
+          <div class="container">
+            <div class="discounts__inner">
+              <div class="discounts__images">
+                <img class="discounts__img" src="images/quad-bikes.png" alt="Квадроциклы">
+                <img class="discounts__img discounts__img--scale" src="images/all-terrain-vehicles.png" alt="Вездеходы">
+              </div>
+              <div class="discounts__content">
+                <h1 class="discounts__title">
+                  <span class="discounts__span">CКИДКИ</span><br> 
+                  на все запчасти <br> до 70%
+                  </h1>
+                <a class="discounts__btn" href="#">ПОСМОТЕТЬ ВСЕ</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="buywith">
+          <div class="container">
+            <h2 class="buywith__title">С этим товаром покупают</h2>
+            <div class="buywith__inner">
+              <div class="buywith__tabs buywith-tabs">
+                  <div class="buywith-tabs__header">
+                     <div class="buywith-tabs__header-item" data-tab="#tab_7">запчасти</div>
+                     <div class="buywith-tabs__header-item" data-tab="#tab_8">моторы</div>
+                     <div class="buywith-tabs__header-item" data-tab="#tab_9">шины</div>
+                     <div class="buywith-tabs__header-item buywith-tabs__header-item--active" data-tab="#tab_10">электроника</div>
+                     <div class="buywith-tabs__header-item" data-tab="#tab_11">инструменты</div>
+                     <div class="buywith-tabs__header-item" data-tab="#tab_12">аксессуары </div>
+                  </div>
+
+                  <div class="buywith-tabs__content">
+
+                    <div class="buywith-tab__content-item" id="tab_7">
+                      Контент 1
+                    </div>
+                    <div class="buywith-tab__content-item" id="tab_8">
+                      Конетнт 2
+                    </div>
+                     <div class="buywith-tab__content-item" id="tab_9">
+                      Конетнт 3
+                     </div>
+
+                     <div class="buywith-tab__content-item buywith-tab__content-item--active" id="tab_10">
+                        <div class="buywith-tab__slider-buywith">
+                          <div class="buywith-tab__slider-slide">
+                            <!-- card 1 -->
+                            <div class="buywith-tab__slider-card product-card product-card--1 product-card--available">
+                              <div class="product-card__top">
+                                <div class="product-card__badge">
+                                  SALE
+                                </div>
+                                <div class="product-card__wishlist">
+                                  <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                                </div>
+                              </div>
+                              <div class="product-card__content buywith-card">
+                                <div class="product-card__product">
+                                  <img class="product-card__product-img product-card__product-img--1" src="images/Audio-system.png" alt="BRP Audio-портативная система" aria-label="BRP Audio-портативная система">
+                                  <p class="product-card__product-name">
+                                    BRP Audio-портативная система
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="product-card__status-info">
+                                <span class="product-card__availablity">
+                                  нет в наличии
+                                </span>
+                                <a class="product-card__notification-of-availability" href="#">
+                                  Сообщить о поступлении</a>
+                            </div>
+                              <div class="product-card__hover">
+                                <span class="product-card__hover-span">
+                                  посмотреть товар
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end card 1 -->
+    
+                            <!-- card 2 -->
+                            <div class="buywith-tab__slider-card product-card product-card--2">
+                              <div class="product-card__top">
+                                <div class="product-card__wishlist">
+                                  <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                                </div>
+                              </div>
+                              <div class="product-card__content buywith-card">
+                                <div class="product-card__product">
+                                  <img class="product-card__product-img product-card__product-img--2" src="images/Echomap-Plus.png" alt="Garmin Echomap Plus 62cv" aria-label="Garmin Echomap Plus 62cv">
+                                  <p class="product-card__product-name">
+                                    Garmin Echomap Plus 62cv
+                                  </p>
+                                </div>
+                                <div class="product-card__price">
+                                  45 800 ₽
+                                </div>
+                              </div>
+                              <div class="product-card__bottom">
+                                <div class="product-card__cart">
+                                  <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                                </div>
+                              </div>
+                              <div class="product-card__hover">
+                                <span class="product-card__hover-span">
+                                  посмотреть товар
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end card 2 -->
+    
+                            <!-- card 3 -->
+                            <div class="buywith-tab__slider-card product-card product-card--3 product-card--available">
+                              <div class="product-card__top">
+                                <div class="product-card__badge">
+                                  SALE
+                                </div>
+                                <div class="product-card__wishlist">
+                                  <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                                </div>
+                              </div>
+                              <div class="product-card__content">
+                                <div class="product-card__product">
+                                  <img class="product-card__product-img product-card__product-img--3" src="images/RF D.E.S.S.TM Key.png" alt="RF D.E.S.S.TM Key" aria-label="RF D.E.S.S.TM Key">
+                                  <p class="product-card__product-name">           
+                                    RF D.E.S.S.TM Key
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="product-card__status-info">
+                                <span class="product-card__availablity">
+                                  нет в наличии
+                                </span>
+                                <a class="product-card__notification-of-availability" href="#">
+                                  Сообщить о поступлении</a>
+                              </div>
+                              <div class="product-card__hover">
+                                <span class="product-card__hover-span">
+                                  посмотреть товар
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end card 3 -->
+                
+                            <!-- card 4 -->
+                            <div class="buywith-tab__slider-card product-card product-card--4">
+                              <div class="product-card__top">
+                                <div class="product-card__wishlist">
+                                  <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                                </div>
+                              </div>
+                              <div class="product-card__content">
+                                <div class="product-card__product">
+                                  <img class="product-card__product-img product-card__product-img--4" src="images/Men's-suit.png" alt="Мужской костюм 3мм" aria-label="Мужской костюм 3мм">
+                                  <p class="product-card__product-name">
+                                    Мужской костюм <br> 3мм
+                                  </p>
+                                </div>
+                                <div class="product-card__price">
+                                  7 000 ₽
+                                </div>
+                              </div>
+                              <div class="product-card__bottom">
+                                <div class="product-card__cart">
+                                  <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                                </div>
+                              </div>
+
+                              <div class="product-card__hover">
+                                <span class="product-card__hover-span">
+                                  посмотреть товар
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end card 4 -->
+                          
+                          </div>
+                        
+                          <div class="buywith-tab__slider-slide">
+                            <!-- card 1 -->
+                            <div class="buywith-tab__slider-card product-card product-card--1 product-card--available">
+                              <div class="product-card__top">
+                                <div class="product-card__badge">
+                                  SALE
+                                </div>
+                                <div class="product-card__wishlist">
+                                  <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                                </div>
+                              </div>
+                              <div class="product-card__content buywith-card">
+                                <div class="product-card__product">
+                                  <img class="product-card__product-img product-card__product-img--1" src="images/Audio-system.png" alt="BRP Audio-портативная система" aria-label="BRP Audio-портативная система">
+                                  <p class="product-card__product-name">
+                                    BRP Audio-портативная система
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="product-card__status-info">
+                                <span class="product-card__availablity">
+                                  нет в наличии
+                                </span>
+                                <a class="product-card__notification-of-availability" href="#">
+                                  Сообщить о поступлении</a>
+                              </div>
+                              <div class="product-card__hover">
+                                <span class="product-card__hover-span">
+                                  посмотреть товар
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end card 1 -->
+    
+                            <!-- card 2 -->
+                            <div class="buywith-tab__slider-card product-card product-card--2">
+                              <div class="product-card__top">
+                                <div class="product-card__wishlist">
+                                  <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                                </div>
+                              </div>
+                              <div class="product-card__content buywith-card">
+                                <div class="product-card__product">
+                                  <img class="product-card__product-img product-card__product-img--2" src="images/Echomap-Plus.png" alt="Garmin Echomap Plus 62cv" aria-label="Garmin Echomap Plus 62cv">
+                                  <p class="product-card__product-name">
+                                    Garmin Echomap Plus 62cv
+                                  </p>
+                                </div>
+                                <div class="product-card__price">
+                                  45 800 ₽
+                                </div>
+                              </div>
+                              <div class="product-card__bottom">
+                                <div class="product-card__cart">
+                                  <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                                </div>
+                              </div>
+                              <div class="product-card__hover">
+                                <span class="product-card__hover-span">
+                                  посмотреть товар
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end card 2 -->
+    
+                            <!-- card 3 -->
+                            <div class="buywith-tab__slider-card product-card product-card--3 product-card--available">
+                              <div class="product-card__top">
+                                <div class="product-card__badge">
+                                  SALE
+                                </div>
+                                <div class="product-card__wishlist">
+                                  <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                                </div>
+                              </div>
+                              <div class="product-card__content">
+                                <div class="product-card__product">
+                                  <img class="product-card__product-img product-card__product-img--3" src="images/RF D.E.S.S.TM Key.png" alt="RF D.E.S.S.TM Key" aria-label="RF D.E.S.S.TM Key">
+                                  <p class="product-card__product-name">           
+                                    RF D.E.S.S.TM Key
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="product-card__status-info">
+                                <span class="product-card__availablity">
+                                  нет в наличии
+                                </span>
+                                <a class="product-card__notification-of-availability" href="#">
+                                  Сообщить о поступлении</a>
+                              </div>
+                              <div class="product-card__hover">
+                                <span class="product-card__hover-span">
+                                  посмотреть товар
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end card 3 -->
+                
+                            <!-- card 4 -->
+                            <div class="buywith-tab__slider-card product-card product-card--4">
+                              <div class="product-card__top">
+                                <div class="product-card__wishlist">
+                                  <img class="product-card__wishlist-img" src="images/heart-icon.svg" alt="heart icon" aria-label="Добавить товар в список желаний">
+                                </div>
+                              </div>
+                              <div class="product-card__content">
+                                <div class="product-card__product">
+                                  <img class="product-card__product-img product-card__product-img--4" src="images/Men's-suit.png" alt="Мужской костюм 3мм" aria-label="Мужской костюм 3мм">
+                                  <p class="product-card__product-name">
+                                    Мужской костюм <br> 3мм
+                                  </p>
+                                </div>
+                                <div class="product-card__price">
+                                  7 000 ₽
+                                </div>
+                              </div>
+                              <div class="product-card__bottom">
+                                <div class="product-card__cart">
+                                  <img class="product-card__cart-img" src="images/card-cart.svg" alt="cart icon" aria-label="Купить товар">
+                                </div>
+                              </div>
+
+                              <div class="product-card__hover">
+                                <span class="product-card__hover-span">
+                                  посмотреть товар
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end card 4 -->
+                          
+                          </div>
+                      </div>
+                     </div>
+
+                     <div class="buywith-tab__content-item" id="tab_11">
+                      Конетнт 5
+                     </div>
+                     <div class="buywith-tab__content-item" id="tab_12">
+                      Конетнт 6
+                     </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+
+
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top top-footer">
+            <div class="top-footer__element top-footer__element--subscribe">
+              <p class="top-footer__text">
+                Подпишитесь на нашу рассылку 
+                и узнавайте об акциях быстрее
+              </p>
+              <form class="form">
+                <input class="form__input" type="text" placeholder="Введите ваш e-mail:">
+                <button class="form__btn btn-reset" type="submit">Отправить</button>
+              </form>
+            </div>
+
+            <div class="top-footer__element">
+              <h2 class="top-footer__title">Информация</h2>
+              <nav class="top-footer__menu">
+                <ul class="top-footer__list">
+                  <li class="top-footer__item">
+                    <a class="top-footer__link" href="#">О компании</a>
+                  </li>
+                  <li class="top-footer__item">
+                    <a class="top-footer__link" href="#">Контакты</a>
+                  </li>
+                  <li class="top-footer__item">
+                    <a class="top-footer__link" href="#">Акции</a>
+                  </li>
+                  <li class="top-footer__item">
+                    <a class="top-footer__link" href="#">Магазины</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="top-footer__element">
+              <h2 class="top-footer__title">Интернет-магазин</h2>
+              <nav class="top-footer__menu">
+                <ul class="top-footer__list">
+                  <li class="top-footer__item">
+                    <a class="top-footer__link" href="#">Доставка и самовывоз</a>
+                  </li>
+                  <li class="top-footer__item">
+                    <a class="top-footer__link" href="#">Оплата</a>
+                  </li>
+                  <li class="top-footer__item">
+                    <a class="top-footer__link" href="#">Возврат-обмен</a>
+                  </li>
+                  <li class="top-footer__item">
+                    <a class="top-footer__link" href="#">Новости</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="top-footer__element top-footer__element--social">
+              <div class="top-footer__social social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link" target="_blank" href="https://www.facebook.com">
+                      <img class="social__img" target="_blank" src="images/instagram.svg" alt="instagram" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" target="_blank" href="https://www.facebook.com">
+                      <img class="social__img" target="_blank" src="images/facebook.svg" alt="facebook" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" target="_blank" href="https://www.facebook.com">
+                      <img class="social__img" target="_blank" src="images/youtube.svg" alt="youtube" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__links">
+              <a class="bottom-footer__link" href="#">Договор оферты</a>
+              <a class="bottom-footer__link" href="#">Политика обработки персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/buywith.js"></script>
+  </body>
+</html>
